@@ -10,8 +10,7 @@ private:
     bool disponible;
 
 public:
-    Article(string _titre, string _auteur, int _annee, bool _disponible)
-        : titre(_titre), auteur(_auteur), annee(_annee), disponible(_disponible) {}
+    Article(string _titre, string _auteur, int _annee, bool _disponible) : titre(_titre), auteur(_auteur), annee(_annee), disponible(_disponible) {}
 
     string getTitre() const { return titre; }
     string getAuteur() const { return auteur; }
@@ -54,8 +53,7 @@ private:
     string genre;
 
 public:
-    Livre(string _titre, string _auteur, int _annee, bool _disponible, string _genre)
-        : Article(_titre, _auteur, _annee, _disponible), genre(_genre) {}
+    Livre(string _titre, string _auteur, int _annee, bool _disponible, string _genre): Article(_titre, _auteur, _annee, _disponible), genre(_genre) {}
 
     void afficherDetails() const {
         Article::afficherDetails(); // Call base class method
@@ -68,8 +66,7 @@ private:
     int mois;
 
 public:
-    Magazine(string _titre, string _auteur, int _annee, bool _disponible, int _mois)
-        : Article(_titre, _auteur, _annee, _disponible), mois(_mois) {}
+    Magazine(string _titre, string _auteur, int _annee, bool _disponible, int _mois) : Article(_titre, _auteur, _annee, _disponible), mois(_mois) {}
 
     void afficherDetails() const {
         Article::afficherDetails(); // Call base class method
