@@ -56,7 +56,7 @@ public:
     Livre(string _titre, string _auteur, int _annee, bool _disponible, string _genre): Article(_titre, _auteur, _annee, _disponible), genre(_genre) {}
 
     void afficherDetails() const {
-        Article::afficherDetails(); // Call base class method
+        Article::afficherDetails(); 
         cout << "Genre : " << genre << endl;
     }
 };
@@ -69,7 +69,7 @@ public:
     Magazine(string _titre, string _auteur, int _annee, bool _disponible, int _mois) : Article(_titre, _auteur, _annee, _disponible), mois(_mois) {}
 
     void afficherDetails() const {
-        Article::afficherDetails(); // Call base class method
+        Article::afficherDetails(); 
         cout << "Mois de publication : " << mois << endl;
     }
 };
